@@ -49,7 +49,7 @@
 .example-card {
     background-color: rgba(255, 255, 255, 0.74);
     width: 400px;
-    margin-bottom: 12px;
+    margin: 12px;
 }
 
 .example-card .card-title {
