@@ -1,4 +1,4 @@
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,14 +7,14 @@
     margin-bottom: 20px;
 }
 
-.search-bar{
+.search-bar {
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.search-bar input{
+.search-bar input {
     width: 600px;
     height: 35px;
     /*border-radius: 10px;*/
@@ -22,7 +22,7 @@
     padding-left: 10px;
 }
 
-.search-bar button{
+.search-bar button {
     /*border-radius: 10px;*/
     border: 0 solid #321f3d86;
     height: 53px;
@@ -34,7 +34,56 @@
     font-weight: bold;
 }
 
-.search-bar button:hover{
+.search-bar button:hover {
     background-color: #751ba15d;
 }
 
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.example-card {
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 400px;
+    margin-bottom: 12px;
+}
+
+.example-card .card-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.example-card .card-subtitle {
+    font-size: 20px;
+    color: #000000;
+}
+
+.example-card button {
+    border: 0 solid #321f3d86;
+    height: 40px;
+    width: 150px;
+    background-color: #442457be;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.example-card button:hover {
+    background-color: #360d4b91;
+}
+
+.example-card .calificacion {
+    font-size: 22px;
+
+}
+
+.example-card mat-icon{
+    font-size: 30px;
+    color: gold;
+}

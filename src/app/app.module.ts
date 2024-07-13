@@ -12,6 +12,10 @@ import { ResenasComponent } from './components/resenas/resenas.component';
 import { AboutComponent } from './components/about/about.component';
 import { BuscadorproductoComponent } from './buscadorproducto/buscadorproducto.component';
 import { BuscadorvendedorComponent } from './buscadorvendedor/buscadorvendedor.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +28,15 @@ import { BuscadorvendedorComponent } from './buscadorvendedor/buscadorvendedor.c
     ResenasComponent,
     AboutComponent,
     BuscadorproductoComponent,
-    BuscadorvendedorComponent
+    BuscadorvendedorComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
