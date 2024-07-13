@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main-color: azure;
+    --font-size: 16px;
+    --head-blue: rgb(29, 94, 168);
+    --card-border-radius: 4px;
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

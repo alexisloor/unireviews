@@ -1,0 +1,10 @@
+.header {
+    width: 100%;
+    background-color:var(--head-blue);
+}
+
+p {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
