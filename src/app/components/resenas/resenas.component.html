@@ -1,1 +1,21 @@
-<p>resenas works!</p>
+<div class="review-form">
+    <h2>Publicar Reseña</h2>
+    <input type="text" [(ngModel)]="nuevaResena.usuario" placeholder="Tu nombre" />
+    <input type="text" [(ngModel)]="nuevaResena.producto" placeholder="Nombre del producto" />
+    <textarea [(ngModel)]="nuevaResena.opinion" placeholder="Escribe tu reseña"></textarea>
+    <input type="file" (change)="cargarImagen($event)" />
+    <button (click)="agregarResena()">Publicar</button>
+  </div>
+  
+  <div class="resenas-list">
+    <h2>Reseñas</h2>
+    <ul>
+      <li *ngFor="let resena of resenas">
+        <h3>{{ resena.usuario }}</h3>
+        <p><strong>Producto:</strong> {{ resena.producto }}</p>
+        <p>{{ resena.opinion }}</p>
+        <img *ngIf="resena.imagen" [src]="resena.imagen" alt="Imagen de reseña" />
+      </li>
+    </ul>
+  </div>
+  

@@ -3,6 +3,25 @@
     <p>Encuentra las opiniones sobre los vendedores a los que piensas comprar un producto</p>
 </div>
 <div class="search-bar">
-    <input type="text" placeholder="Buscar Vendedor">
-    <button>Buscar</button>
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Buscar Vendedor">
+    <button (click)="searchVendedor()">Buscar</button>
 </div>
+
+<div *ngIf="error">{{ error }}</div>
+
+<div *ngIf="vendedores.length > 0" class="results">
+    <h3>Resultados de la búsqueda:</h3>
+    <mat-card class="example-card" appearance="outlined" *ngFor="let vendedor of vendedores">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title class="card-title">{{ vendedor.usuario }}</mat-card-title>
+            <img mat-card-lg-image src = "{{vendedor.logo}}"   alt="vendedor-logo">
+          </mat-card-title-group>
+        </mat-card-header>
+        <h3>Opiniones</h3>
+        <mat-card-content class="opiniones" *ngFor="let key of getOpinionKeys(vendedor)">
+            <p><b>{{ key }}:</b> {{ vendedor.opiniones[key] }}</p>
+        </mat-card-content>
+      </mat-card>
+</div>
+

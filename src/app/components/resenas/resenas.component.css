@@ -1,0 +1,42 @@
+.review-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .review-form input,
+  .review-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .review-form button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .resenas-list {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .resenas-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resenas-list li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .resenas-list img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
