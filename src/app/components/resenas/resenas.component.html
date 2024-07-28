@@ -1,21 +1,50 @@
-<div class="review-form">
-    <h2>Publicar Reseña</h2>
-    <input type="text" [(ngModel)]="nuevaResena.usuario" placeholder="Tu nombre" />
-    <input type="text" [(ngModel)]="nuevaResena.producto" placeholder="Nombre del producto" />
-    <textarea [(ngModel)]="nuevaResena.opinion" placeholder="Escribe tu reseña"></textarea>
-    <input type="file" (change)="cargarImagen($event)" />
-    <button (click)="agregarResena()">Publicar</button>
+<div class="resenas-list">
+
+  <h2>Reseñas sobre LAPTOP/NOTEBOOK HP CI7-1255U 1.7GHZ-8GB-256GB SSD-NATURAL SILVER-15.6″HD-W11</h2>
+  <div class="producto">
+    <img src="assets/laptop.jpg" alt="Imagen de reseña"/>
+    <div class="descripcion">
+      <p><strong>Pantalla:</strong> 15.6″HD 1366 x 768 pixels.</p>
+      <p><strong>Procesador:</strong> Intel Core i7-1255U 1.7GHz.</p>
+      <p><strong>Memoria RAM:</strong> 8GB DDR4.</p>
+      <p><strong>Almacenamiento:</strong> 256GB SSD.</p>
+      <p><strong>Sistema Operativo:</strong> Windows 11.</p>
+      <p><strong>precio:</strong> $1.129,99</p>
+    </div>
   </div>
-  
-  <div class="resenas-list">
+  <div class="resenas">
     <h2>Reseñas</h2>
-    <ul>
-      <li *ngFor="let resena of resenas">
-        <h3>{{ resena.usuario }}</h3>
-        <p><strong>Producto:</strong> {{ resena.producto }}</p>
-        <p>{{ resena.opinion }}</p>
-        <img *ngIf="resena.imagen" [src]="resena.imagen" alt="Imagen de reseña" />
-      </li>
-    </ul>
+    <div class="resena">
+      <p><strong>Usuario:</strong> Juan Perez</p>
+      <p><strong>Calificación:</strong>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </p>
+      <p><strong>Comentario:</strong> Excelente producto, muy rápido y con una excelente calidad de imagen.</p>
+    </div>
+    <div class="resena">
+      <p><strong>Usuario:</strong> Maria Rodriguez</p>
+      <p><strong>Calificación:</strong>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </p>
+      <p><strong>Comentario:</strong> Muy buen producto, la batería dura mucho y es muy rápido.</p>
+    </div>
+    <div class="resena">
+      <p><strong>Usuario:</strong> Carlos Sanchez</p>
+      <p><strong>Calificación:</strong>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </p>
+      <p><strong>Comentario:</strong> Buen producto, pero la pantalla no es Full HD.</p>
+    </div>
   </div>
   
+
+</div>

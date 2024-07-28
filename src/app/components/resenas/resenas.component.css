@@ -1,42 +1,45 @@
-.review-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .review-form input,
-  .review-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .review-form button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
   .resenas-list {
     max-width: 600px;
     margin: 20px auto;
   }
   
-  .resenas-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .resenas-list li {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-  }
-  
   .resenas-list img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
+    width: 225px;
+    height: 225px;
+    margin: 10px;
   }
   
+  .producto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .resenas{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .resenas h2{
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .resenas .resena{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .resena mat-icon{
+    font-size: 30px;
+    color: gold;
+}
