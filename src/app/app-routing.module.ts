@@ -11,7 +11,7 @@ const routes: Routes = [
   { path:'inicio', component: InicioComponent },
   { path:'buscadorproducto', component: BuscadorproductoComponent },
   { path: 'buscadorvendedor', component: BuscadorvendedorComponent},
-  { path: 'resenas', component: ResenasComponent },
+  { path: 'resenas', component: ResenasComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
 
 ];
