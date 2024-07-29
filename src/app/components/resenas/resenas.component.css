@@ -43,3 +43,23 @@
     font-size: 30px;
     color: gold;
 }
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 565px;
+  margin: 0 auto;
+}
+
+.review-form textarea {
+  margin-bottom: 10px;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

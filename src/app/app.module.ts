@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { DialogoComponent } from './dialogo/dialogo.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     BuscadorproductoComponent,
     BuscadorvendedorComponent,
+    DialogoComponent,
   ],
   imports: [
     BrowserModule,

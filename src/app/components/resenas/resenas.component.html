@@ -14,36 +14,31 @@
   </div>
   <div class="resenas">
     <h2>Reseñas</h2>
+    <div class="review-form">
+      <h3>Publicar Reseña</h3>
+      <textarea [(ngModel)]="nuevaResena.opinion" placeholder="Escribe tu reseña"></textarea>
+      <div class="button">
+        <button (click)="agregarResena()">Publicar</button>
+      </div>
+    </div>
     <div class="resena">
       <p><strong>Usuario:</strong> Juan Perez</p>
-      <p><strong>Calificación:</strong>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-      </p>
       <p><strong>Comentario:</strong> Excelente producto, muy rápido y con una excelente calidad de imagen.</p>
     </div>
     <div class="resena">
       <p><strong>Usuario:</strong> Maria Rodriguez</p>
-      <p><strong>Calificación:</strong>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-      </p>
       <p><strong>Comentario:</strong> Muy buen producto, la batería dura mucho y es muy rápido.</p>
     </div>
     <div class="resena">
-      <p><strong>Usuario:</strong> Carlos Sanchez</p>
-      <p><strong>Calificación:</strong>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-      </p>
+      <p><strong>Usuario: </strong> Carlos Sanchez</p>
       <p><strong>Comentario:</strong> Buen producto, pero la pantalla no es Full HD.</p>
     </div>
+    <div class="resena" *ngFor="let resena of resenas">
+      <p><strong>Usuario:</strong>usuario</p>
+      <p><strong>Comentario:</strong> {{resena.opinion}}</p>
+    </div>
+
+    
   </div>
   
 
